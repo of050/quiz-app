@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #024959;
+  color: #F2B749;
+  font-size: larger;
+}
+
+.app-container {
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+h2, h3 {
+  color: #D9583B;
+}
+
+input, select, button {
+  font-size: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  border: 1px solid #F2B749;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #D9583B;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: none;
+  min-height: 48px;
+}
+
+button:hover {
+  background-color: #063453;
+}
+
+button:disabled {
+  background-color: #0f8f82;
+  cursor: not-allowed;
+}
+
+.card {
+  max-width: 600px;
+  margin: 1rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.answer-button {
+  display: inline-block; /* Changed from flex to inline-block */
+  width: 100%; /* or fixed width like 200px if needed */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500; /* keep font weight stable */
+  text-align: center;
+  border: 2px solid transparent; /* reserve border space */
+  outline: none;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Adjusted transition */
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px;
+  height: 48px; /* Fixed height */
+  /* Removed margin-bottom to prevent shifting */
+  color: black;
+}
+
+.answer-button:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.answer-button:active {
+  background-color: #e0e0e0; 
+}
+
+.answer-btn:hover {
+  background-color: #F28749;
+}
+
+.answer-btn.selected {
+  background-color: #184f97; 
+  border-color: #062961; 
+  color: white;
+}
+
+.answer-btn.correct {
+  background-color: #0ab85e; 
+  border-color: #04412c;
+  color: white;
+}
+
+.answer-btn.incorrect {
+  background-color: #741515; 
+  border-color: #0a0a0a;
+  color: white;
+}
+
+header, footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+header {
+  background-color: #024959;
+}
+
+footer {
+  background-color: #024959;
+}
+
+footer p {
+  margin: 0;
+}
